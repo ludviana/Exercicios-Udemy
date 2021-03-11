@@ -30,6 +30,7 @@ const verificaDiaUtil = (dia) => {
 			break;
 		default:
 			return 'Data invalida';
+			break;
 	}
 };
 

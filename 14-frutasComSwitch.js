@@ -9,8 +9,24 @@
   que retornará uma mensagem de erro no console.
 */
 
-function barracaDeFrutas(fruta){
-
+function barracaDeFrutas(fruta) {
+	switch (fruta) {
+		case 'maça':
+			return 'Não vendemos esta fruta aqui';
+			break;
+		case 'kiwi':
+			return 'Estamos com escassez de kiwis';
+			break;
+		case 'melancia':
+			return 'Aqui está, são 3 reais o quilo';
+			break;
+		default:
+			return 'Erro';
+			break;
+	}
 }
 
-console.log(barracaDeFrutas('kiwi'))
+console.log(barracaDeFrutas('maça'));
+console.log(barracaDeFrutas('kiwi'));
+console.log(barracaDeFrutas('melancia'));
+console.log(barracaDeFrutas('banana'));
